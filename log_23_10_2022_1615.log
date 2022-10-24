@@ -1,0 +1,1365 @@
+Prediction start
+
+hs: 4
+neg_type: clique
+imb: 1
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 0.5832421779632568 seconds
+
+Preparing 1-dim dataset..
+..done: 5.03262996673584 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.975976988949285
+auc_roc for gm-1: 0.7949150338793803
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.975977  0.978318  0.794915  0.799228 NaN  0.239879  0.542613
+Results\hedge-4\negtype-clique-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.98816364892337
+auc_roc for hm-1: 0.9185938910047569
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.988164  0.988161  0.918594  0.918315 NaN -0.000279 -0.030388
+Results\hedge-4\negtype-clique-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9814250448975342
+auc_roc for am-1: 0.8557526116948868
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.981425  0.981406  0.855753  0.852273 NaN -0.001927 -0.406626
+Results\hedge-4\negtype-clique-1\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.9455367212678939
+auc_roc for cn-1: 0.6723795102402913
+               PR1       PR2     ROC1      ROC2   /     %PR2      %ROC2
+email-Eu  0.945537  0.964621  0.67238  0.748826 NaN  2.01836  11.369556
+Results\hedge-4\negtype-clique-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.9430474345385123
+auc_roc for jc-1: 0.6468437877605959
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.943047  0.942514  0.646844  0.649035 NaN -0.056608  0.338733
+Results\hedge-4\negtype-clique-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.9478755388995175
+auc_roc for aa-1: 0.6791974487220668
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.947876  0.960641  0.679197  0.736773 NaN  1.346781  8.477038
+Results\hedge-4\negtype-clique-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 6.376424074172974 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.978318156283119
+auc_roc for gm-2: 0.7992283454932013
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.975977  0.978318  0.794915  0.799228 NaN  0.239879  0.542613
+Results\hedge-4\negtype-clique-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9881608956333232
+auc_roc for hm-2: 0.9183147493843589
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.988164  0.988161  0.918594  0.918315 NaN -0.000279 -0.030388
+Results\hedge-4\negtype-clique-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9814061281097693
+auc_roc for am-2: 0.8522729010844461
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.981425  0.981406  0.855753  0.852273 NaN -0.001927 -0.406626
+Results\hedge-4\negtype-clique-1\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.964621052013326
+auc_roc for cn-2: 0.748826075651203
+               PR1       PR2     ROC1      ROC2   /     %PR2      %ROC2
+email-Eu  0.945537  0.964621  0.67238  0.748826 NaN  2.01836  11.369556
+Results\hedge-4\negtype-clique-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.9425135911604142
+auc_roc for jc-2: 0.6490348582878295
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.943047  0.942514  0.646844  0.649035 NaN -0.056608  0.338733
+Results\hedge-4\negtype-clique-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.9606413438489796
+auc_roc for aa-2: 0.7367732758225118
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.947876  0.960641  0.679197  0.736773 NaN  1.346781  8.477038
+Results\hedge-4\negtype-clique-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-clique-1\seed-9\aa-email-Eu
+--- 13.909178733825684 seconds ---
+
+Prediction start
+
+hs: 4
+neg_type: clique
+imb: 2
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 0.5751283168792725 seconds
+
+Preparing 1-dim dataset..
+..done: 6.015349626541138 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9308475099582574
+auc_roc for gm-1: 0.8154936172966881
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.930848  0.938951  0.815494  0.824939 NaN  0.870597  1.158263
+Results\hedge-4\negtype-clique-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.953609190965357
+auc_roc for hm-1: 0.9056604851082947
+               PR1       PR2     ROC1      ROC2   /      %PR2    %ROC2
+email-Eu  0.953609  0.953554  0.90566  0.905563 NaN -0.005827 -0.01072
+Results\hedge-4\negtype-clique-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9470570003950922
+auc_roc for am-1: 0.8814907314696018
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.947057  0.948564  0.881491  0.882951 NaN  0.159106  0.165634
+Results\hedge-4\negtype-clique-2\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.8245689758511426
+auc_roc for cn-1: 0.6819403570354409
+               PR1       PR2     ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.824569  0.881391  0.68194  0.742933 NaN  6.891123  8.943979
+Results\hedge-4\negtype-clique-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.7896999169841583
+auc_roc for jc-1: 0.6321864899129302
+             PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.7897  0.790729  0.632186  0.635311 NaN  0.130258  0.494273
+Results\hedge-4\negtype-clique-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.8272592605606899
+auc_roc for aa-1: 0.6849756151418357
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.827259  0.875706  0.684976  0.741811 NaN  5.856283  8.297403
+Results\hedge-4\negtype-clique-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 7.633720397949219 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9389514397157013
+auc_roc for gm-2: 0.8249391806230798
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.930848  0.938951  0.815494  0.824939 NaN  0.870597  1.158263
+Results\hedge-4\negtype-clique-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9535536265643282
+auc_roc for hm-2: 0.905563402534807
+               PR1       PR2     ROC1      ROC2   /      %PR2    %ROC2
+email-Eu  0.953609  0.953554  0.90566  0.905563 NaN -0.005827 -0.01072
+Results\hedge-4\negtype-clique-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9485638252167841
+auc_roc for am-2: 0.8829507772316618
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.947057  0.948564  0.881491  0.882951 NaN  0.159106  0.165634
+Results\hedge-4\negtype-clique-2\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.8813910364297691
+auc_roc for cn-2: 0.742932959724057
+               PR1       PR2     ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.824569  0.881391  0.68194  0.742933 NaN  6.891123  8.943979
+Results\hedge-4\negtype-clique-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.7907285679435394
+auc_roc for jc-2: 0.6353112162733235
+             PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.7897  0.790729  0.632186  0.635311 NaN  0.130258  0.494273
+Results\hedge-4\negtype-clique-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.8757059043719206
+auc_roc for aa-2: 0.7418107993893315
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.827259  0.875706  0.684976  0.741811 NaN  5.856283  8.297403
+Results\hedge-4\negtype-clique-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-clique-2\seed-9\aa-email-Eu
+--- 16.16262149810791 seconds ---
+
+Prediction start
+
+hs: 4
+neg_type: star
+imb: 1
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 0.6711611747741699 seconds
+
+Preparing 1-dim dataset..
+..done: 5.056660175323486 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9906728643804558
+auc_roc for gm-1: 0.9053671668272687
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.990673  0.990261  0.905367  0.904212 NaN -0.041557 -0.127551
+Results\hedge-4\negtype-star-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.9915399324664036
+auc_roc for hm-1: 0.9188462656204592
+              PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.99154  0.991542  0.918846  0.919328 NaN  0.000204  0.052436
+Results\hedge-4\negtype-star-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9914569045737045
+auc_roc for am-1: 0.9364283638477188
+               PR1       PR2      ROC1     ROC2   /     %PR2     %ROC2
+email-Eu  0.991457  0.991439  0.936428  0.93605 NaN -0.00184 -0.040426
+Results\hedge-4\negtype-star-1\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.9550577397395668
+auc_roc for cn-1: 0.7195582679453646
+               PR1       PR2      ROC1      ROC2   /      %PR2      %ROC2
+email-Eu  0.955058  0.984045  0.719558  0.884336 NaN  3.035138  22.899838
+Results\hedge-4\negtype-star-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.9616509609340655
+auc_roc for jc-1: 0.7516251395708102
+               PR1      PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.961651  0.96484  0.751625  0.772465 NaN  0.331621  2.772662
+Results\hedge-4\negtype-star-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.9578292116273415
+auc_roc for aa-1: 0.7351596078251427
+               PR1      PR2     ROC1      ROC2   /      %PR2      %ROC2
+email-Eu  0.957829  0.98388  0.73516  0.883709 NaN  2.719724  20.206391
+Results\hedge-4\negtype-star-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 6.288407325744629 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9902611659999184
+auc_roc for gm-2: 0.90421236176754
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.990673  0.990261  0.905367  0.904212 NaN -0.041557 -0.127551
+Results\hedge-4\negtype-star-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9915419527282718
+auc_roc for hm-2: 0.9193280717049817
+              PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.99154  0.991542  0.918846  0.919328 NaN  0.000204  0.052436
+Results\hedge-4\negtype-star-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.991438661556248
+auc_roc for am-2: 0.9360498019241652
+               PR1       PR2      ROC1     ROC2   /     %PR2     %ROC2
+email-Eu  0.991457  0.991439  0.936428  0.93605 NaN -0.00184 -0.040426
+Results\hedge-4\negtype-star-1\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.9840450578761264
+auc_roc for cn-2: 0.8843359488520778
+               PR1       PR2      ROC1      ROC2   /      %PR2      %ROC2
+email-Eu  0.955058  0.984045  0.719558  0.884336 NaN  3.035138  22.899838
+Results\hedge-4\negtype-star-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.9648399999772508
+auc_roc for jc-2: 0.7724651646553176
+               PR1      PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.961651  0.96484  0.751625  0.772465 NaN  0.331621  2.772662
+Results\hedge-4\negtype-star-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.9838795209386937
+auc_roc for aa-2: 0.8837088361706358
+               PR1      PR2     ROC1      ROC2   /      %PR2      %ROC2
+email-Eu  0.957829  0.98388  0.73516  0.883709 NaN  2.719724  20.206391
+Results\hedge-4\negtype-star-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-star-1\seed-9\aa-email-Eu
+--- 13.878644466400146 seconds ---
+
+Prediction start
+
+hs: 4
+neg_type: star
+imb: 2
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 0.6011378765106201 seconds
+
+Preparing 1-dim dataset..
+..done: 5.958911180496216 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9679004245058644
+auc_roc for gm-1: 0.9045478426729308
+             PR1       PR2      ROC1      ROC2   /     %PR2     %ROC2
+email-Eu  0.9679  0.968898  0.904548  0.905362 NaN  0.10304  0.089965
+Results\hedge-4\negtype-star-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.967758402464449
+auc_roc for hm-1: 0.92148494458679
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.967758  0.967792  0.921485  0.921437 NaN  0.003425 -0.005164
+Results\hedge-4\negtype-star-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9735422889734155
+auc_roc for am-1: 0.9381355577298669
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.973542  0.973499  0.938136  0.937977 NaN -0.004396 -0.016943
+Results\hedge-4\negtype-star-2\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.8560088397012792
+auc_roc for cn-1: 0.7208247830870735
+               PR1       PR2      ROC1      ROC2   /       %PR2      %ROC2
+email-Eu  0.856009  0.959148  0.720825  0.898623 NaN  12.048895  24.665934
+Results\hedge-4\negtype-star-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.8669551214589286
+auc_roc for jc-1: 0.7499019656365761
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.866955  0.884728  0.749902  0.784915 NaN  2.050059  4.669076
+Results\hedge-4\negtype-star-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.8659779888754309
+auc_roc for aa-1: 0.7358145227915618
+               PR1       PR2      ROC1      ROC2   /       %PR2      %ROC2
+email-Eu  0.865978  0.960543  0.735815  0.901751 NaN  10.919984  22.551337
+Results\hedge-4\negtype-star-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 7.475098371505737 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9688977466506836
+auc_roc for gm-2: 0.9053616230683423
+             PR1       PR2      ROC1      ROC2   /     %PR2     %ROC2
+email-Eu  0.9679  0.968898  0.904548  0.905362 NaN  0.10304  0.089965
+Results\hedge-4\negtype-star-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9677915478870804
+auc_roc for hm-2: 0.9214373550899821
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.967758  0.967792  0.921485  0.921437 NaN  0.003425 -0.005164
+Results\hedge-4\negtype-star-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9734994903141616
+auc_roc for am-2: 0.937976608810529
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.973542  0.973499  0.938136  0.937977 NaN -0.004396 -0.016943
+Results\hedge-4\negtype-star-2\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.959148443319055
+auc_roc for cn-2: 0.8986229503203725
+               PR1       PR2      ROC1      ROC2   /       %PR2      %ROC2
+email-Eu  0.856009  0.959148  0.720825  0.898623 NaN  12.048895  24.665934
+Results\hedge-4\negtype-star-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.8847282090278075
+auc_roc for jc-2: 0.7849154620178709
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.866955  0.884728  0.749902  0.784915 NaN  2.050059  4.669076
+Results\hedge-4\negtype-star-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.960542647784309
+auc_roc for aa-2: 0.9017505320505743
+               PR1       PR2      ROC1      ROC2   /       %PR2      %ROC2
+email-Eu  0.865978  0.960543  0.735815  0.901751 NaN  10.919984  22.551337
+Results\hedge-4\negtype-star-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-star-2\seed-9\aa-email-Eu
+--- 16.023370504379272 seconds ---
+
+Prediction start
+
+hs: 4
+neg_type: tailed
+imb: 1
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 0.6847512722015381 seconds
+
+Preparing 1-dim dataset..
+..done: 5.3156561851501465 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.993694546404889
+auc_roc for gm-1: 0.93025283347864
+               PR1       PR2      ROC1  ...   /          %PR2         %ROC2
+email-Eu  0.993695  0.993695  0.930253  ... NaN -1.117268e-14 -1.193464e-14
+
+[1 rows x 7 columns]
+Results\hedge-4\negtype-tailed-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.9866160524705361
+auc_roc for hm-1: 0.8853072087367504
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.986616  0.986637  0.885307  0.885414 NaN  0.002138  0.012094
+Results\hedge-4\negtype-tailed-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.992890557401838
+auc_roc for am-1: 0.9330098349622967
+               PR1       PR2     ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.992891  0.992977  0.93301  0.933794 NaN  0.008692  0.084017
+Results\hedge-4\negtype-tailed-1\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.9590921313710477
+auc_roc for cn-1: 0.7604926658407134
+               PR1       PR2      ROC1      ROC2   /      %PR2      %ROC2
+email-Eu  0.959092  0.991501  0.760493  0.926953 NaN  3.379154  21.888466
+Results\hedge-4\negtype-tailed-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.9694660173623422
+auc_roc for jc-1: 0.7995763165542453
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.969466  0.971471  0.799576  0.813702 NaN  0.206862  1.766602
+Results\hedge-4\negtype-tailed-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.9615771052999439
+auc_roc for aa-1: 0.7694557885559583
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.961577  0.990988  0.769456  0.924188 NaN  3.058599  20.10933
+Results\hedge-4\negtype-tailed-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 6.489442586898804 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.993694546404889
+auc_roc for gm-2: 0.93025283347864
+               PR1       PR2      ROC1  ...   /          %PR2         %ROC2
+email-Eu  0.993695  0.993695  0.930253  ... NaN -1.117268e-14 -1.193464e-14
+
+[1 rows x 7 columns]
+Results\hedge-4\negtype-tailed-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.986637151160652
+auc_roc for hm-2: 0.8854142767555332
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.986616  0.986637  0.885307  0.885414 NaN  0.002138  0.012094
+Results\hedge-4\negtype-tailed-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9929768613157388
+auc_roc for am-2: 0.9337937258140993
+               PR1       PR2     ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.992891  0.992977  0.93301  0.933794 NaN  0.008692  0.084017
+Results\hedge-4\negtype-tailed-1\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.9915013357021029
+auc_roc for cn-2: 0.9269528441854418
+               PR1       PR2      ROC1      ROC2   /      %PR2      %ROC2
+email-Eu  0.959092  0.991501  0.760493  0.926953 NaN  3.379154  21.888466
+Results\hedge-4\negtype-tailed-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.971471470488671
+auc_roc for jc-2: 0.8137016473179461
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.969466  0.971471  0.799576  0.813702 NaN  0.206862  1.766602
+Results\hedge-4\negtype-tailed-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.9909878935165365
+auc_roc for aa-2: 0.9241881949861576
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.961577  0.990988  0.769456  0.924188 NaN  3.058599  20.10933
+Results\hedge-4\negtype-tailed-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-tailed-1\seed-9\aa-email-Eu
+--- 14.462300062179565 seconds ---
+
+Prediction start
+
+hs: 4
+neg_type: tailed
+imb: 2
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 0.5601251125335693 seconds
+
+Preparing 1-dim dataset..
+..done: 5.888927459716797 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9784463992373846
+auc_roc for gm-1: 0.9245858761987794
+               PR1       PR2      ROC1      ROC2   /  %PR2  %ROC2
+email-Eu  0.978446  0.978446  0.924586  0.924586 NaN   0.0    0.0
+Results\hedge-4\negtype-tailed-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.9487726904856255
+auc_roc for hm-1: 0.8818125525905411
+               PR1      PR2      ROC1     ROC2   /      %PR2     %ROC2
+email-Eu  0.948773  0.94764  0.881813  0.87626 NaN -0.119351 -0.629725
+Results\hedge-4\negtype-tailed-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.967480362643392
+auc_roc for am-1: 0.9144865928547143
+              PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.96748  0.967168  0.914487  0.913755 NaN -0.032291 -0.079966
+Results\hedge-4\negtype-tailed-2\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.8735529382493401
+auc_roc for cn-1: 0.7828920001595523
+               PR1       PR2      ROC1     ROC2   /      %PR2      %ROC2
+email-Eu  0.873553  0.953766  0.782892  0.91025 NaN  9.182369  16.267622
+Results\hedge-4\negtype-tailed-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.8797759403744962
+auc_roc for jc-1: 0.7942620039394233
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.879776  0.888273  0.794262  0.812988 NaN  0.965818  2.357604
+Results\hedge-4\negtype-tailed-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.8797155903631173
+auc_roc for aa-1: 0.7877478997023589
+               PR1      PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.879716  0.95332  0.787748  0.908192 NaN  8.366826  15.28966
+Results\hedge-4\negtype-tailed-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 7.471189260482788 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9784463992373846
+auc_roc for gm-2: 0.9245858761987794
+               PR1       PR2      ROC1      ROC2   /  %PR2  %ROC2
+email-Eu  0.978446  0.978446  0.924586  0.924586 NaN   0.0    0.0
+Results\hedge-4\negtype-tailed-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9476403245767251
+auc_roc for hm-2: 0.8762595612690489
+               PR1      PR2      ROC1     ROC2   /      %PR2     %ROC2
+email-Eu  0.948773  0.94764  0.881813  0.87626 NaN -0.119351 -0.629725
+Results\hedge-4\negtype-tailed-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9671679581881991
+auc_roc for am-2: 0.9137553112885181
+              PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.96748  0.967168  0.914487  0.913755 NaN -0.032291 -0.079966
+Results\hedge-4\negtype-tailed-2\seed-9\agg\am-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.9537657950906471
+auc_roc for cn-2: 0.9102499083523752
+               PR1       PR2      ROC1     ROC2   /      %PR2      %ROC2
+email-Eu  0.873553  0.953766  0.782892  0.91025 NaN  9.182369  16.267622
+Results\hedge-4\negtype-tailed-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.888272973745492
+auc_roc for jc-2: 0.8129875606156441
+               PR1       PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.879776  0.888273  0.794262  0.812988 NaN  0.965818  2.357604
+Results\hedge-4\negtype-tailed-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.9533198639944666
+auc_roc for aa-2: 0.9081918730875087
+               PR1      PR2      ROC1      ROC2   /      %PR2     %ROC2
+email-Eu  0.879716  0.95332  0.787748  0.908192 NaN  8.366826  15.28966
+Results\hedge-4\negtype-tailed-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-4\negtype-tailed-2\seed-9\aa-email-Eu
+--- 15.833758354187012 seconds ---
+
+Prediction start
+
+hs: 5
+neg_type: clique
+imb: 1
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 5.202413558959961 seconds
+
+Preparing 1-dim dataset..
+..done: 3.071685791015625 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9779042151512445
+auc_roc for gm-1: 0.7982050173010381
+               PR1       PR2       PR3  ...         %ROC2  %PR3.1     %ROC3
+email-Eu  0.977904  0.977876  0.978223  ... -1.390900e-14     NaN  0.227587
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.9883258925744514
+auc_roc for hm-1: 0.9062716262975778
+               PR1       PR2       PR3  ...  %ROC2  %PR3.1     %ROC3
+email-Eu  0.988326  0.988328  0.987955  ...    0.0     NaN -0.293514
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9849285468213123
+auc_roc for am-1: 0.8707504325259516
+               PR1       PR2      PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.984929  0.984338  0.98549  ... -0.32784     NaN  0.926953
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.9568524139957169
+auc_roc for cn-1: 0.7134191176470588
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.956852  0.971932  0.972716  ...  11.711657     NaN  0.302562
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.9334274151247957
+auc_roc for jc-1: 0.6173767301038063
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1    %ROC3
+email-Eu  0.933427  0.933414  0.935588  ...  0.499168     NaN  2.27954
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.9582109452693001
+auc_roc for aa-1: 0.7146301903114187
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.958211  0.971748  0.974537  ...  11.355899     NaN  1.703943
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 4.28574013710022 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9778762498129812
+auc_roc for gm-2: 0.798205017301038
+               PR1       PR2       PR3  ...         %ROC2  %PR3.1     %ROC3
+email-Eu  0.977904  0.977876  0.978223  ... -1.390900e-14     NaN  0.227587
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.988328016723517
+auc_roc for hm-2: 0.9062716262975778
+               PR1       PR2       PR3  ...  %ROC2  %PR3.1     %ROC3
+email-Eu  0.988326  0.988328  0.987955  ...    0.0     NaN -0.293514
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.984337621133959
+auc_roc for am-2: 0.8678957612456748
+               PR1       PR2      PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.984929  0.984338  0.98549  ... -0.32784     NaN  0.926953
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.9719324421706131
+auc_roc for cn-2: 0.7969723183391003
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.956852  0.971932  0.972716  ...  11.711657     NaN  0.302562
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.9334135065031917
+auc_roc for jc-2: 0.6204584775086506
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1    %ROC3
+email-Eu  0.933427  0.933414  0.935588  ...  0.499168     NaN  2.27954
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.9717475711598521
+auc_roc for aa-2: 0.7957828719723183
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.958211  0.971748  0.974537  ...  11.355899     NaN  1.703943
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\aa-email-Eu
+Preparing 3-dim dataset..
+..done: 5.281180143356323 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-3: 0.978222903966355
+auc_roc for gm-3: 0.8000216262975778
+               PR1       PR2       PR3  ...         %ROC2  %PR3.1     %ROC3
+email-Eu  0.977904  0.977876  0.978223  ... -1.390900e-14     NaN  0.227587
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-3: 0.9879553246643509
+auc_roc for hm-3: 0.9036115916955018
+               PR1       PR2       PR3  ...  %ROC2  %PR3.1     %ROC3
+email-Eu  0.988326  0.988328  0.987955  ...    0.0     NaN -0.293514
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-3: 0.9854898109727792
+auc_roc for am-3: 0.8759407439446367
+               PR1       PR2      PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.984929  0.984338  0.98549  ... -0.32784     NaN  0.926953
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-3: 0.972716194329816
+auc_roc for cn-3: 0.7993836505190312
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.956852  0.971932  0.972716  ...  11.711657     NaN  0.302562
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-3: 0.9355882062641567
+auc_roc for jc-3: 0.6346020761245673
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1    %ROC3
+email-Eu  0.933427  0.933414  0.935588  ...  0.499168     NaN  2.27954
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-3: 0.9745369817654436
+auc_roc for aa-3: 0.8093425605536333
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.958211  0.971748  0.974537  ...  11.355899     NaN  1.703943
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-clique-1\seed-9\aa-email-Eu
+--- 22.871991634368896 seconds ---
+
+Prediction start
+
+hs: 5
+neg_type: clique
+imb: 2
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 5.387203216552734 seconds
+
+Preparing 1-dim dataset..
+..done: 3.617720603942871 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9123280183178152
+auc_roc for gm-1: 0.7934664640764056
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.912328  0.928957  0.928724  ...  1.592805     NaN -0.073376
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.9324650120750253
+auc_roc for hm-1: 0.8800412415888866
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.932465  0.930774  0.930908  ... -1.188847     NaN -0.167867
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9269407970988882
+auc_roc for am-1: 0.8472813110484045
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.926941  0.931418  0.930956  ...  0.454088     NaN  0.393379
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.8546465263906122
+auc_roc for cn-1: 0.7129748209246798
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.854647  0.890663  0.899067  ...  7.004879     NaN  0.966993
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.8116378315354308
+auc_roc for jc-1: 0.6520675059691773
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.811638  0.811413  0.827484  ...  0.083636     NaN  4.206596
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.8581910888821441
+auc_roc for aa-1: 0.7134659214239202
+               PR1       PR2       PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.858191  0.893103  0.909797  ...  8.09302     NaN  2.617895
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 5.0621302127838135 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9289572992971973
+auc_roc for gm-2: 0.8061048404601693
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.912328  0.928957  0.928724  ...  1.592805     NaN -0.073376
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9307736756761094
+auc_roc for hm-2: 0.8695789016713698
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.932465  0.930774  0.930908  ... -1.188847     NaN -0.167867
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9314182480052695
+auc_roc for am-2: 0.8511287171695245
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.926941  0.931418  0.930956  ...  0.454088     NaN  0.393379
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.8906634221429364
+auc_roc for cn-2: 0.7629178424137184
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.854647  0.890663  0.899067  ...  7.004879     NaN  0.966993
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.8114129474973002
+auc_roc for jc-2: 0.6526128717169525
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.811638  0.811413  0.827484  ...  0.083636     NaN  4.206596
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.8931034378638569
+auc_roc for aa-2: 0.7712068591274148
+               PR1       PR2       PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.858191  0.893103  0.909797  ...  8.09302     NaN  2.617895
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\aa-email-Eu
+Preparing 3-dim dataset..
+..done: 6.2714009284973145 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-3: 0.9287236574162945
+auc_roc for gm-3: 0.8055133492511395
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.912328  0.928957  0.928724  ...  1.592805     NaN -0.073376
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-3: 0.930908311917614
+auc_roc for hm-3: 0.8681191664857825
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.932465  0.930774  0.930908  ... -1.188847     NaN -0.167867
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-3: 0.9309558278915979
+auc_roc for am-3: 0.854476883004124
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.926941  0.931418  0.930956  ...  0.454088     NaN  0.393379
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-3: 0.8990669980381795
+auc_roc for cn-3: 0.7702952029520296
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.854647  0.890663  0.899067  ...  7.004879     NaN  0.966993
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-3: 0.8274841653379641
+auc_roc for jc-3: 0.6800656609507272
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.811638  0.811413  0.827484  ...  0.083636     NaN  4.206596
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-3: 0.9097966927072917
+auc_roc for aa-3: 0.7913962448448015
+               PR1       PR2       PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.858191  0.893103  0.909797  ...  8.09302     NaN  2.617895
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-clique-2\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-clique-2\seed-9\aa-email-Eu
+--- 24.7590970993042 seconds ---
+
+Prediction start
+
+hs: 5
+neg_type: star
+imb: 1
+seed: 9
+gn: email-Eu
+
+
+Loading cached data..
+..done: 5.109156847000122 seconds
+
+Preparing 1-dim dataset..
+..done: 3.084691286087036 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-1: 0.9923153904713228
+auc_roc for gm-1: 0.9181877162629758
+               PR1       PR2       PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.992315  0.992423  0.992399  ...  0.07066     NaN -0.016476
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-1: 0.9923277205207164
+auc_roc for hm-1: 0.9319852941176471
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.992328  0.992337  0.992715  ... -0.027845     NaN  0.362092
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-1: 0.9949572171104452
+auc_roc for am-1: 0.9542171280276817
+               PR1       PR2       PR3  ...  %ROC2  %PR3.1     %ROC3
+email-Eu  0.994957  0.994282  0.993437  ... -0.553     NaN -0.783974
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-1: 0.9532983938405122
+auc_roc for cn-1: 0.7039900519031143
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.953298  0.987594  0.991175  ...  27.724445     NaN  2.306536
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-1: 0.9626818807135249
+auc_roc for jc-1: 0.7381271626297579
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.962682  0.963642  0.968452  ...  0.852597     NaN  3.762129
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-1: 0.9563125702844835
+auc_roc for aa-1: 0.7165765570934255
+               PR1       PR2      PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.956313  0.988472  0.99208  ...  25.877861     NaN  2.390371
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\aa-email-Eu
+Preparing 2-dim dataset..
+..done: 4.390981197357178 seconds
+
+Train/testing..
+feature: gm
+-----------------------
+auc_pr for gm-2: 0.9924234682874509
+auc_roc for gm-2: 0.9188365051903115
+               PR1       PR2       PR3  ...    %ROC2  %PR3.1     %ROC3
+email-Eu  0.992315  0.992423  0.992399  ...  0.07066     NaN -0.016476
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\gm-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\gm-email-Eu
+Train/testing..
+feature: hm
+-----------------------
+auc_pr for hm-2: 0.9923372377914439
+auc_roc for hm-2: 0.9317257785467128
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.992328  0.992337  0.992715  ... -0.027845     NaN  0.362092
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\hm-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\hm-email-Eu
+Train/testing..
+feature: am
+-----------------------
+auc_pr for am-2: 0.9942819719009631
+auc_roc for am-2: 0.9489403114186853
+               PR1       PR2       PR3  ...  %ROC2  %PR3.1     %ROC3
+email-Eu  0.994957  0.994282  0.993437  ... -0.553     NaN -0.783974
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\am-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\am-email-Eu
+Train/testing..
+feature: cn
+-----------------------
+auc_pr for cn-2: 0.9875942292749169
+auc_roc for cn-2: 0.8991673875432526
+               PR1       PR2       PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.953298  0.987594  0.991175  ...  27.724445     NaN  2.306536
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\cn-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\cn-email-Eu
+Train/testing..
+feature: jc
+-----------------------
+auc_pr for jc-2: 0.9636419729373205
+auc_roc for jc-2: 0.7444204152249134
+               PR1       PR2       PR3  ...     %ROC2  %PR3.1     %ROC3
+email-Eu  0.962682  0.963642  0.968452  ...  0.852597     NaN  3.762129
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\jc-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\jc-email-Eu
+Train/testing..
+feature: aa
+-----------------------
+auc_pr for aa-2: 0.9884720735220859
+auc_roc for aa-2: 0.9020112456747404
+               PR1       PR2      PR3  ...      %ROC2  %PR3.1     %ROC3
+email-Eu  0.956313  0.988472  0.99208  ...  25.877861     NaN  2.390371
+
+[1 rows x 12 columns]
+Results\hedge-5\negtype-star-1\seed-9\agg\aa-aggregate.csv
+Results\hedge-5\negtype-star-1\seed-9\aa-email-Eu
+Preparing 3-dim dataset..

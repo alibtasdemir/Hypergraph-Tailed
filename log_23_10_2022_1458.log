@@ -1,0 +1,692 @@
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 4
+Sampling Type: clique
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 3324
+# cliques found: 2294
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 4
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 1147	Pos: 1147
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 1147	Pos: 1147
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 4
+Sampling Type: clique
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 6723
+# cliques found: 4588
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 4
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 2294	Pos: 1147
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 2294	Pos: 1147
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 4
+Sampling Type: star
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 222
+# hubs found: 2294
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 4
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 1147	Pos: 1147
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 1147	Pos: 1147
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 4
+Sampling Type: star
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 440
+# hubs found: 4588
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 4
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 2294	Pos: 1147
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 2294	Pos: 1147
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 4
+Sampling Type: tailed
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 8
+# 4-tailed found: 2294
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 4
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 1147	Pos: 1147
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 1147	Pos: 1147
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 4
+Sampling Type: tailed
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 17
+# 4-tailed found: 4589
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 4
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 2294	Pos: 1147
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 2295	Pos: 1147
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 5
+Sampling Type: clique
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 3114
+# cliques found: 1359
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 5
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 679	Pos: 679
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 680	Pos: 680
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 5
+Sampling Type: clique
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 6324
+# cliques found: 2718
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 5
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 1359	Pos: 679
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 1359	Pos: 680
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 5
+Sampling Type: star
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 110
+# hubs found: 1359
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 5
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 679	Pos: 679
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 680	Pos: 680
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 5
+Sampling Type: star
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 235
+# hubs found: 2718
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 5
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 1359	Pos: 679
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 1359	Pos: 680
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 5
+Sampling Type: tailed
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 6
+# 5-tailed found: 1359
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 5
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 679	Pos: 679
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 680	Pos: 680
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: email-Eu
+Hyperedge Size: 5
+Sampling Type: tailed
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 21
+# 5-tailed found: 2718
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+..done
+Generating 3-pg..
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: email-Eu
+Target Hedge Size: 5
+# of transactions: 234760
+# of hedges: 25027
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 1359	Pos: 679
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 1359	Pos: 680
+Imbalance: 2.00 (Actual)
+------------------------------
+

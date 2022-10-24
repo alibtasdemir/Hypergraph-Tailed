@@ -1,0 +1,1613 @@
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 3
+Sampling Type: clique
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+n_iter: 10000
+n_iter: 20000
+n_iter: 30000
+n_iter: 40000
+n_iter: 50000
+# node iterations 56086
+# cliques found: 41226
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 3
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 20613	Pos: 20613
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 20613	Pos: 20613
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 3
+Sampling Type: clique
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+n_iter: 10000
+n_iter: 20000
+n_iter: 30000
+n_iter: 40000
+n_iter: 50000
+n_iter: 60000
+n_iter: 70000
+n_iter: 80000
+n_iter: 90000
+n_iter: 100000
+n_iter: 110000
+n_iter: 120000
+# node iterations 121704
+# cliques found: 82452
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 3
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 41226	Pos: 20613
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 41226	Pos: 20613
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 3
+Sampling Type: star
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 4403
+# hubs found: 41226
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 3
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 20613	Pos: 20613
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 20613	Pos: 20613
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 3
+Sampling Type: star
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 8833
+# hubs found: 82452
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 3
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 41226	Pos: 20613
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 41226	Pos: 20613
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 3
+Sampling Type: tailed
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 22
+# 3-tailed found: 41226
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 3
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 20613	Pos: 20613
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 20613	Pos: 20613
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 3
+Sampling Type: tailed
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 41
+# 3-tailed found: 82454
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 3
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 41227	Pos: 20613
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 41227	Pos: 20613
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 4
+Sampling Type: clique
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+n_iter: 10000
+n_iter: 20000
+n_iter: 30000
+n_iter: 40000
+# node iterations 40107
+# cliques found: 29829
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 4
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 14914	Pos: 14914
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 14915	Pos: 14915
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 4
+Sampling Type: clique
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+n_iter: 10000
+n_iter: 20000
+n_iter: 30000
+n_iter: 40000
+n_iter: 50000
+n_iter: 60000
+n_iter: 70000
+n_iter: 80000
+# node iterations 83222
+# cliques found: 59658
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 4
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 29829	Pos: 14914
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 29829	Pos: 14915
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 4
+Sampling Type: star
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 3140
+# hubs found: 29829
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 4
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 14914	Pos: 14914
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 14915	Pos: 14915
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 4
+Sampling Type: star
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 6243
+# hubs found: 59658
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 4
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 29829	Pos: 14914
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 29829	Pos: 14915
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 4
+Sampling Type: tailed
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 22
+# 4-tailed found: 29830
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 4
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 14915	Pos: 14914
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 14915	Pos: 14915
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 4
+Sampling Type: tailed
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 44
+# 4-tailed found: 59662
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 4
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 29831	Pos: 14914
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 29831	Pos: 14915
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 5
+Sampling Type: clique
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+n_iter: 10000
+n_iter: 20000
+# node iterations 22796
+# cliques found: 15690
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 5
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 7845	Pos: 7845
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 7845	Pos: 7845
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 5
+Sampling Type: clique
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+n_iter: 10000
+n_iter: 20000
+n_iter: 30000
+n_iter: 40000
+# node iterations 46688
+# cliques found: 31380
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 5
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: clique
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 15690	Pos: 7845
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 15690	Pos: 7845
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 5
+Sampling Type: star
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 1652
+# hubs found: 15690
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 5
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 7845	Pos: 7845
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 7845	Pos: 7845
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 5
+Sampling Type: star
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+# node iterations 3323
+# hubs found: 31380
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 5
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: star
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 15690	Pos: 7845
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 15690	Pos: 7845
+Imbalance: 2.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 5
+Sampling Type: tailed
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 12
+# 5-tailed found: 15690
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 5
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 1
+------------------------------
+Train:
+Neg: 7845	Pos: 7845
+Imbalance: 1.00 (Actual)
+------------------------------
+Test:
+Neg: 7845	Pos: 7845
+Imbalance: 1.00 (Actual)
+------------------------------
+
+##############################
+Settings:
+Graph Name: DAWN
+Hyperedge Size: 5
+Sampling Type: tailed
+Imbalance Ratio: 2
+##############################
+Generating timestamped hedges
+Generating unique hedges...
+..done
+Sampling positive and negative hedges...
+Generating 2-pg..
+..done
+n_iter: 0
+# node iterations 25
+# 5-tailed found: 31388
+Generating pgs..
+Generating 2-pg..
+..done
+Generating 2-pg..
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 3-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+Generating 4-pg..
+500000
+1000000
+1500000
+2000000
+2500000
+3000000
+3500000
+4000000
+4500000
+5000000
+5500000
+6000000
+6500000
+7000000
+7500000
+8000000
+8500000
+9000000
+9500000
+10000000
+10500000
+11000000
+11500000
+12000000
+12500000
+13000000
+13500000
+14000000
+14500000
+15000000
+15500000
+16000000
+16500000
+17000000
+17500000
+18000000
+18500000
+19000000
+19500000
+20000000
+..done
+..done
+Saving...
+Saved!
+------------------------------
+HyperGraph: DAWN
+Target Hedge Size: 5
+# of transactions: 2272433
+# of hedges: 141087
+------------------------------
+Pos/Neg samples
+Settings:
+Sampling type: tailed
+Seed: 9	Imbalance: 2
+------------------------------
+Train:
+Neg: 15694	Pos: 7845
+Imbalance: 2.00 (Actual)
+------------------------------
+Test:
+Neg: 15694	Pos: 7845
+Imbalance: 2.00 (Actual)
+------------------------------
+

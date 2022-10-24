@@ -1,0 +1,8 @@
+##############################
+Settings:
+Graph Name: data\DAWN
+Hyperedge Size: 3
+Sampling Type: clique
+Imbalance Ratio: 1
+##############################
+Generating timestamped hedges
