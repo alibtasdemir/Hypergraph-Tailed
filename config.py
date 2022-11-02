@@ -12,8 +12,18 @@ default_save_path = os.path.join(default_save_dir, "hypergraph.data")
 
 default_results_dir = os.path.join(RESULTS_DIR, "hedge-{}", "negtype-{}-{}", "seed-{}")
 
-GNS = ["email-Eu",
-       "email-Enron"]
+GNS = [
+    #"contact-high-school",
+    #"contact-primary-school",
+    "DAWN",
+    "email-Eu",
+    "email-Enron",
+    "NDC-classes",
+    "tags-ask-ubuntu",
+    "tags-math-sx",
+    "threads-ask-ubuntu",
+]
+
 """
 GNS = [name for name in os.listdir(DATADIR) if os.path.isdir(os.path.join(DATADIR, name))]
 GNS.remove('coauth-MAG-Geology')

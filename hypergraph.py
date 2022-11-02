@@ -3,6 +3,7 @@ import pickle
 import random
 import sys
 
+import config
 from helper import *
 from sampler import get_cliques, get_hubs, get_tailed
 
@@ -217,7 +218,14 @@ class HyperGraph:
         print("\n")
 
 
-def iterate_over_data(save=True, info=True):
+def iterate_over_data(
+        GNS=config.GNS,
+        HEDGE_SIZES=config.HEDGE_SIZES,
+        NEG_TYPES=config.NEG_TYPES,
+        IMBS=config.IMBS,
+        save=True,
+        info=True
+):
     for gn in GNS:
         for hs in HEDGE_SIZES:
             for neg_type in NEG_TYPES:
@@ -261,7 +269,12 @@ def complete_pgs():
 if __name__ == "__main__":
     import Logger
     sys.stdout = Logger.Logger()
-    iterate_over_data()
+    iterate_over_data(
+        GNS=["DAWN"],
+        HEDGE_SIZES=[4, 5],
+        NEG_TYPES=["clique", "star", "tailed"],
+        IMBS=[5, 10]
+    )
     #complete_pgs()
     sys.stdout.close()
 
