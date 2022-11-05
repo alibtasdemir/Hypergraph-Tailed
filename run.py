@@ -163,7 +163,7 @@ if __name__ == "__main__":
         )
 
         parser.add_argument(
-            '--features',
+            '--feature',
             type=str,
             default="",
             choices=["", "gm", "hm", "am", "cn", "jc", "aa"],
@@ -197,10 +197,10 @@ if __name__ == "__main__":
         else:
             imb_ratio = args.imb
 
-        if args.features == "":
+        if args.feature == "":
             features = ["gm", "hm", "am", "cn", "jc", "aa"]
         else:
-            features = args.features
+            features = args.feature
 
         config = Config(
             input_folder,
