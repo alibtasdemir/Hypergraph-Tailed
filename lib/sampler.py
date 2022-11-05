@@ -2,7 +2,7 @@ import random
 from config import *
 
 
-def get_cliques(size, G, exclude, n, strong=False, max_iter=MAX_ITER):
+def get_cliques(size, G, exclude, n, strong=False, max_iter=10*1000*10):
     """
     :param size: clique size
     :param G: nx graph
@@ -65,7 +65,7 @@ def get_cliques(size, G, exclude, n, strong=False, max_iter=MAX_ITER):
     return cliques
 
 
-def get_hubs(size, G, exclude, n, induced=False, max_iter=MAX_ITER):
+def get_hubs(size, G, exclude, n, induced=False, max_iter=10*1000*10):
     hubs = set()
     n_neighbors = size - 1
     nodes = list(G.nodes)
@@ -103,7 +103,7 @@ def get_hubs(size, G, exclude, n, induced=False, max_iter=MAX_ITER):
     return hubs
 
 
-def get_tailed(size, G, exclude, n, max_iter=MAX_ITER):
+def get_tailed(size, G, exclude, n, max_iter=10*1000*10):
     tailed_figures = set()
 
     n_neighbors = size - 1

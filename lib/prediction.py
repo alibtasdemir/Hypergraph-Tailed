@@ -1,19 +1,16 @@
-from __future__ import print_function
-
-import os
-import pickle
 import random
 import time
+import os
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import auc, precision_recall_curve, roc_curve
-from config import *
-from dataset import HedgePredDataset
-from features import get_feature_vectors_dict
-from hypergraph import HyperGraph
+
+from lib.dataset import HedgePredDataset
+from lib.features import get_feature_vectors_dict
+from lib.hypergraph import HyperGraph
 
 ax = plt.gca()
 
@@ -72,10 +69,6 @@ def evaluate_performance(y_true, y_pred):
     return precision, recall, fpr, tpr, auc_pr, auc_roc
 
 
-def record_performance(y_true, y_pred):
-    raise NotImplementedError
-
-
 def draw_curves(y_true, y_pred, features, dim, axes):
     precision, recall, fpr, tpr, auc_pr, auc_roc = evaluate_performance(y_true, y_pred)
 
@@ -104,13 +97,13 @@ def draw_curves(y_true, y_pred, features, dim, axes):
     return axes
 
 
-def create_agg_df(hs, gn=None):
+def create_agg_df(config, hs, gn=None):
     if hs == 4:
         columns = ["PR1", "PR2", "ROC1", "ROC2", "/", "%PR2", "%ROC2"]
     else:
         columns = ["PR1", "PR2", "PR3", "ROC1", "ROC2", "ROC3", "/", "%PR2", "%PR3", "%ROC2", "%PR3"]
 
-    rows = GNS
+    rows = config.GNS
 
     df_agg = pd.DataFrame(index=rows, columns=columns)
 
@@ -134,8 +127,7 @@ def insert_agg_df(df_agg, gn, dim, auc_pr, auc_roc):
     return df_agg
 
 
-def hedgepred(hs, neg_type, imb, seed, features, gn, gpath):
-    from config import default_save_dir, default_results_dir
+def hedgepred(config, hs, neg_type, imb, seed, features, gn, gpath):
 
     print("hs: {}".format(hs))
 
@@ -151,12 +143,12 @@ def hedgepred(hs, neg_type, imb, seed, features, gn, gpath):
 
     # Cached data
     if int(imb) < 10:  # Load from 10 but use just a fraction of it
-        hg_dir = default_save_dir.format(gn, hs, neg_type, "10", seed)
+        hg_dir = config.default_save_dir.format(gn, hs, neg_type, "10", seed)
     else:
-        hg_dir = default_save_dir.format(gn, hs, neg_type, imb, seed)
+        hg_dir = config.default_save_dir.format(gn, hs, neg_type, imb, seed)
 
     print("Loading cached data..")
-    basepath = os.path.join(hg_dir, "hg")
+    basepath = os.path.join(hg_dir, "../HG")
     start_time = time.time()
 
     hGraph = HyperGraph.from_pickle(gpath)
@@ -190,7 +182,7 @@ def hedgepred(hs, neg_type, imb, seed, features, gn, gpath):
         neg_test = neg["test"]
 
     # Results
-    results_dir = default_results_dir.format(hs, neg_type, imb, seed)
+    results_dir = config.default_results_dir.format(hs, neg_type, imb, seed)
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
 
@@ -272,7 +264,7 @@ def hedgepred(hs, neg_type, imb, seed, features, gn, gpath):
             if os.path.isfile(agg_path):
                 agg_df = pd.read_csv(agg_path, index_col=0)
             else:
-                agg_df = create_agg_df(hs, gn=gn)
+                agg_df = create_agg_df(config, hs, gn=gn)
 
             print("Train/testing..")
 
@@ -305,7 +297,6 @@ def hedgepred(hs, neg_type, imb, seed, features, gn, gpath):
             # aggregate results
             agg_df.to_csv(agg_path)
             print(agg_df)
-            print(agg_path)
 
             gname = os.path.splitext(os.path.basename(gn))[0]
             # individual results
@@ -314,17 +305,16 @@ def hedgepred(hs, neg_type, imb, seed, features, gn, gpath):
             fig.suptitle(results_path)
             fig.savefig(results_path + '.png')
             df.to_csv(results_path + '.csv', mode='w')
-            print(results_path)
 
 
-def action(hs, neg_type, imb, seed, features, gn, gpath):
+def action(config, hs, neg_type, imb, seed, features, gn, gpath):
     start_time = time.time()
     print("Prediction start\n")
-    hedgepred(hs, neg_type, imb, seed, features, gn, gpath)
+    hedgepred(config, hs, neg_type, imb, seed, features, gn, gpath)
     print("--- {} seconds ---\n".format(time.time() - start_time))
 
 
-def aggregate_all_results():
+def aggregate_all_results(config):
     def table_name_func(path):
         ossep = os.path.sep
         path = "_".join(path.split(ossep)[1:]).replace("-aggregate.csv", "").replace("_agg", "")
@@ -332,7 +322,7 @@ def aggregate_all_results():
 
     import glob
 
-    all_tables = glob.glob(os.path.join("Results\\*\\*\\*\\agg", "*.csv"))
+    all_tables = glob.glob(os.path.join(config.results_folder, "*", "*", "*", "agg", "*.csv"))
     tnames = [table_name_func(x) for x in all_tables]
     cdf = pd.concat(
         [pd.read_csv(f).assign(setting=table_name_func(f)) for f in all_tables], keys=tnames, axis=0, ignore_index=True
@@ -348,12 +338,31 @@ def aggregate_all_results():
     cdf.to_csv("auc_all.csv", index=False)
 
 
+def run_prediction(config):
+    from lib import Logger
+    import sys
+
+    sys.stdout = Logger.Logger(config.task)
+
+    for gn in config.GNS:
+        for hs in config.HEDGE_SIZES:
+            for neg_type in config.NEG_TYPES:
+                for imb in config.IMBS:
+                    filename = config.default_save_path.format(gn, hs, neg_type, imb, config.SEED)
+                    action(config, hs, neg_type, imb, config.SEED, config.FEATURES, gn, filename)
+
+    aggregate_all_results(config)
+    sys.stdout.close()
+
+
 if __name__ == "__main__":
-    from Logger import Logger
+    pass
+    """
+    from lib.Logger import Logger
     import sys
 
     sys.stdout = Logger()
-
+    
     for gn in GNS:
         for hs in HEDGE_SIZES:
             for neg_type in NEG_TYPES:
@@ -362,6 +371,7 @@ if __name__ == "__main__":
                     action(hs, neg_type, imb, SEED, FEATURES, gn, filename)
     sys.stdout.close()
     aggregate_all_results()
+    """
 
     """
     hedgepred(hs, neg_type, imb, seed, features, gn, gpath)

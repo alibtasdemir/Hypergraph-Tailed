@@ -1,22 +1,23 @@
-import glob
 import pickle
 import random
 import sys
 
 import config
-from helper import *
-from sampler import get_cliques, get_hubs, get_tailed
+from lib.helper import *
+from lib.sampler import get_cliques, get_hubs, get_tailed
 
 
 class HyperGraph:
-    def __init__(self, graph_name, hedge_size, neg_type, imb, seed):
+    def __init__(self, config, graph_name, hedge_size, neg_type, imb, seed):
+        self.config = config
+
         self.gn = graph_name
         self.hedge_size = hedge_size
         self.neg_type = neg_type
         self.imb = imb
         self.seed = seed
 
-        self.transactions, self.hedges, self.weights = get_hedges_and_weights(self.gn)
+        self.transactions, self.hedges, self.weights = get_hedges_and_weights(self.config, self.gn)
 
         # Will be Assigned after sample_hedges()
         # Train
@@ -41,8 +42,6 @@ class HyperGraph:
 
         self.sample_hedges()
         self.generate_pgs()
-        #self.save_data(name="nopgs")
-
 
     @classmethod
     def from_pickle(cls, filepath):
@@ -107,14 +106,14 @@ class HyperGraph:
     def __negative_sampling(self, hedges_exclude, n_pos):
         pg_all = hedges_to_pg(self.hedges, self.weights, p=2)
         max_neg = int(n_pos * self.imb)
-        n_neg = min(max_neg, MAX_NEG_GENERATION)
+        n_neg = min(max_neg, self.config.MAX_NEG_GENERATION)
 
         if self.neg_type in ["hub", "star"]:
-            neg_hedges = get_hubs(self.hedge_size, G=pg_all, exclude=hedges_exclude, n=n_neg, induced=False)
+            neg_hedges = get_hubs(self.hedge_size, G=pg_all, exclude=hedges_exclude, n=n_neg, induced=False, max_iter=self.config.MAX_ITER)
         elif self.neg_type == "clique":
-            neg_hedges = get_cliques(self.hedge_size, G=pg_all, exclude=hedges_exclude, n=n_neg, strong=False)
+            neg_hedges = get_cliques(self.hedge_size, G=pg_all, exclude=hedges_exclude, n=n_neg, strong=False, max_iter=self.config.MAX_ITER)
         elif self.neg_type == "tailed":
-            neg_hedges = get_tailed(self.hedge_size, G=pg_all, exclude=hedges_exclude, n=n_neg)
+            neg_hedges = get_tailed(self.hedge_size, G=pg_all, exclude=hedges_exclude, n=n_neg, max_iter=self.config.MAX_ITER)
         else:
             raise NotImplementedError
 
@@ -141,7 +140,7 @@ class HyperGraph:
 
     def __str__(self):
         out = ""
-        out += ("-"*30)+"\n"
+        out += ("-" * 30) + "\n"
         out += "HyperGraph: {}\n".format(self.gn)
         out += "Target Hedge Size: {}\n".format(self.hedge_size)
 
@@ -172,7 +171,7 @@ class HyperGraph:
         # '../../hg-MAX%s/{}/size-{}/neg-{}{}/seed-{}/' % MAX_HEDGE_SIZE
         # (gn, hedge_size, neg_type, imb, seed)
         # 'HG\\{}\\hedge-{}\\negtype-{}-{}\\seed-{}\\hypergraph.data'
-        folder_path = default_save_dir.format(self.gn, self.hedge_size, self.neg_type, self.imb, self.seed)
+        folder_path = self.config.default_save_dir.format(self.gn, self.hedge_size, self.neg_type, self.imb, self.seed)
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
 
@@ -218,6 +217,7 @@ class HyperGraph:
         print("\n")
 
 
+"""
 def iterate_over_data(
         GNS=config.GNS,
         HEDGE_SIZES=config.HEDGE_SIZES,
@@ -264,10 +264,47 @@ def complete_pgs():
                     hg.generate_pgs()
                     hg.save_data()
                     print(hg)
+"""
+
+
+def generate_hypergraphs(config):
+    for gn in config.GNS:
+        for hs in config.HEDGE_SIZES:
+            for neg_type in config.NEG_TYPES:
+                for imb in config.IMBS:
+                    print(
+                        "#" * 30 + "\n"
+                        + "Settings:\n"
+                        + "Graph Name: {}\n".format(gn)
+                        + "Hyperedge Size: {}\n".format(hs)
+                        + "Sampling Type: {}\n".format(neg_type)
+                        + "Imbalance Ratio: {}\n".format(imb)
+                        + "#" * 30
+                    )
+
+                    filename = config.default_save_path.format(gn, hs, neg_type, imb, config.SEED)
+                    hg = HyperGraph(config, gn, hs, neg_type, imb, config.SEED)
+                    if config.save:
+                        print("Saving...")
+                        hg.save_data()
+                        print("Saved!")
+                    if config.info:
+                        print(hg)
+
+
+def run(config):
+    from lib import Logger
+
+    sys.stdout = Logger.Logger(config.task)
+    generate_hypergraphs(config)
+    sys.stdout.close()
 
 
 if __name__ == "__main__":
-    import Logger
+    pass
+    """
+    from lib import Logger
+
     sys.stdout = Logger.Logger()
     iterate_over_data(
         GNS=["DAWN"],
@@ -277,6 +314,7 @@ if __name__ == "__main__":
     )
     #complete_pgs()
     sys.stdout.close()
+    """
 
     """
     GN = "contact-primary-school"

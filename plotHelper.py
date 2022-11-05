@@ -2,7 +2,24 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
-from config import *
+
+def cols_from_setting(data):
+    data["hedge"] = data.setting.apply(lambda x: int(x.split('_')[0].split('-')[-1]))
+    data["neg_sample"] = data.setting.apply(lambda x: x.split('_')[1].split('-')[1])
+    data["imbalance"] = data.setting.apply(lambda x: int(x.split('_')[1].split('-')[-1]))
+    data["feature"] = data.setting.apply(lambda x: x.split('_')[-1])
+    data.drop(columns=["setting"] + list(data.filter(regex='ROC')), inplace=True)
+    return data
+
+
+DATA_URL = "auc_all.csv"
+df = cols_from_setting(pd.read_csv(DATA_URL))
+result_path = "NEWResults"
+GNS = list(df["Graph Name"].unique())
+HEDGE_SIZES = list(df["hedge"].unique())
+IMBS = list(df["imbalance"].unique())
+FEATURES = list(df["feature"].unique())
+NEG_TYPES = list(df["neg_sample"].unique())
 
 
 def create_parameters_box(networks=None, hedges=None, sampling=None, imbs=None, features=None):
@@ -108,15 +125,6 @@ def data_filter_selection(hedge=True, sample=True, imb=True, feature=True, netwo
             feature_selection = None
 
     return hedge_selection, sample_selection, imb_selection, feature_selection, network_selection
-
-
-def cols_from_setting(data):
-    data["hedge"] = data.setting.apply(lambda x: int(x.split('_')[0].split('-')[-1]))
-    data["neg_sample"] = data.setting.apply(lambda x: x.split('_')[1].split('-')[1])
-    data["imbalance"] = data.setting.apply(lambda x: int(x.split('_')[1].split('-')[-1]))
-    data["feature"] = data.setting.apply(lambda x: x.split('_')[-1])
-    data.drop(columns=["setting"] + list(data.filter(regex='ROC')), inplace=True)
-    return data
 
 
 def plot_expansion_graph(data):

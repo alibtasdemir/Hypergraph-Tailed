@@ -5,9 +5,9 @@ import networkx as nx
 from config import *
 
 
-def get_hedges_and_weights(graph_name):
+def get_hedges_and_weights(config, graph_name):
     timestamped_hedges, unique_hedges, weights = [], [], []
-    gpath = os.path.join(DATADIR, graph_name, "{}-hypergraph.txt".format(graph_name))
+    gpath = os.path.join(config.input_folder, graph_name, "{}-hypergraph.hg".format(graph_name))
 
     print("Generating timestamped hedges")
     with open(gpath, 'r') as graph:

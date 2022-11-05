@@ -2,3 +2,9 @@
 /data
 /.idea
 *.log
+/LOGS
+auc_all.csv
+HG_NEW
+NEWResults
+raw_data
+proc_data
