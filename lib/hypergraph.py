@@ -5,7 +5,7 @@ import sys
 import config
 from lib.helper import *
 from lib.sampler import get_cliques, get_hubs, get_tailed
-
+import gc
 
 class HyperGraph:
     def __init__(self, config, graph_name, hedge_size, neg_type, imb, seed):
@@ -217,57 +217,8 @@ class HyperGraph:
         print("\n")
 
 
-"""
-def iterate_over_data(
-        GNS=config.GNS,
-        HEDGE_SIZES=config.HEDGE_SIZES,
-        NEG_TYPES=config.NEG_TYPES,
-        IMBS=config.IMBS,
-        save=True,
-        info=True
-):
-    for gn in GNS:
-        for hs in HEDGE_SIZES:
-            for neg_type in NEG_TYPES:
-                for imb in IMBS:
-                    print("#" * 30 + "\n"
-                          + "Settings:\n"
-                          + "Graph Name: {}\n".format(gn)
-                          + "Hyperedge Size: {}\n".format(hs)
-                          + "Sampling Type: {}\n".format(neg_type)
-                          + "Imbalance Ratio: {}\n".format(imb)
-                          + "#" * 30)
-                    filename = default_save_path.format(gn, hs, neg_type, imb, SEED)
-                    hg = HyperGraph(gn, hs, neg_type, imb, SEED)
-                    if save:
-                        print("Saving...")
-                        hg.save_data()
-                        print("Saved!")
-                    if info:
-                        print(hg)
-
-
-def complete_pgs():
-    for gn in GNS:
-        for hs in HEDGE_SIZES:
-            for neg_type in NEG_TYPES:
-                for imb in IMBS:
-                    print("#" * 30 + "\n"
-                          + "Settings:\n"
-                          + "Graph Name: {}\n".format(gn)
-                          + "Hyperedge Size: {}\n".format(hs)
-                          + "Sampling Type: {}\n".format(neg_type)
-                          + "Imbalance Ratio: {}\n".format(imb)
-                          + "#" * 30)
-                    filename = default_save_path.format(gn, hs, neg_type, imb, SEED)
-                    hg = HyperGraph.from_pickle(filename)
-                    hg.generate_pgs()
-                    hg.save_data()
-                    print(hg)
-"""
-
-
 def generate_hypergraphs(config):
+    import time
     for gn in config.GNS:
         for hs in config.HEDGE_SIZES:
             for neg_type in config.NEG_TYPES:
@@ -281,8 +232,10 @@ def generate_hypergraphs(config):
                         + "Imbalance Ratio: {}\n".format(imb)
                         + "#" * 30
                     )
+                    gc.collect()
 
                     filename = config.default_save_path.format(gn, hs, neg_type, imb, config.SEED)
+                    start_time = time.time()
                     hg = HyperGraph(config, gn, hs, neg_type, imb, config.SEED)
                     if config.save:
                         print("Saving...")
@@ -290,6 +243,8 @@ def generate_hypergraphs(config):
                         print("Saved!")
                     if config.info:
                         print(hg)
+
+                    print("--- {:0.3f} seconds ---\n".format(time.time() - start_time))
 
 
 def run(config):
@@ -301,7 +256,33 @@ def run(config):
 
 
 if __name__ == "__main__":
-    pass
+    from lib import Logger
+    import os
+    import time
+    from config.create_config import Config
+
+    input_folder = "../proc_data"
+    output_folder = "HG_NEW"
+    graph_names = "DAWN"
+    hedge_size = 4
+    neg_types = "clique"
+    imb_ratio = 1
+
+    config = Config(
+        input_folder,
+        output_folder,
+        graph_names,
+        hedge_size,
+        neg_types,
+        imb_ratio,
+        seed=9,
+        save=True,
+        info=True
+    )
+
+    sys.stdout = Logger.Logger()
+    generate_hypergraphs(config)
+    sys.stdout.close()
     """
     from lib import Logger
 

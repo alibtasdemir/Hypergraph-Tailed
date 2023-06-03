@@ -2,7 +2,51 @@ import os
 from itertools import combinations
 import networkx as nx
 
-from config import *
+
+def get_transactions_hedges_and_weights(config, gn):
+    timestamped_hedges = []
+    unique_hedges = []
+    weights = []
+
+    # Generate timestamped hedges
+    print("Generating timestamped hedges...")
+    with open(config.simplices_path.format(gn, gn), 'r') as f_simplices:
+        with open(config.nverts_path.format(gn, gn), 'r') as f_nverts:
+            for nverts in f_nverts:
+                # hedge
+                hedge = []
+                for i in range(int(nverts)):
+                    line = f_simplices.readline()
+                    hedge.append(int(line))
+                if int(nverts) > config.MAX_HEDGE_SIZE:  # skip this simplex
+                    continue
+                hedge.sort()
+                timestamped_hedges.append(tuple(hedge))
+    print("...done")
+
+    # Sort hedges
+    hedges = sorted(timestamped_hedges)
+
+    # Generate unique hedges and their weights
+    print("Generating unique hedges...")
+    for idx, hedge in enumerate(hedges):
+        if idx == 0:
+            last_hedge = hedge
+            w = 1
+            continue
+        if hedge == last_hedge:
+            w += 1
+            continue
+        unique_hedges.append(last_hedge)
+        weights.append(w)
+        last_hedge = hedge
+        w = 1
+    # last element
+    unique_hedges.append(last_hedge)
+    weights.append(w)
+    print("...done")
+
+    return timestamped_hedges, unique_hedges, weights
 
 
 def get_hedges_and_weights(config, graph_name):
@@ -14,6 +58,8 @@ def get_hedges_and_weights(config, graph_name):
         for entry in graph.readlines()[1:]:
             id, nodes, time = entry.split(';')
             hedge = [int(i) for i in nodes.split(',')]
+            if len(hedge) > config.MAX_HEDGE_SIZE:
+                continue
             hedge.sort()
             timestamped_hedges.append(tuple(hedge))
 

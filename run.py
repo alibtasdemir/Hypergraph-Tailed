@@ -135,7 +135,7 @@ if __name__ == "__main__":
             '--graphname',
             type=str,
             default="email-Enron",
-            help="The name of the graphname (Empty if you want to process all graphs in folder"
+            help="The name of the graphname (Empty if you want to process all graphs in folder)"
         )
 
         parser.add_argument(

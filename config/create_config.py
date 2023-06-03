@@ -4,6 +4,7 @@ import os
 class Config:
     def __init__(self, inputFolder, outFolder, graph_names, hedge_size, neg_types, imb_ratio, seed, save=False,
                  info=False):
+        self.MAX_HEDGE_SIZE = 10
         self.MAX_NEG_GENERATION = 10 * 1000 * 1000
         self.MAX_ITER = 10 * 1000 * 1000
         self.task = "create"
@@ -31,6 +32,9 @@ class Config:
             self.NEG_TYPES = neg_types
 
         self.SEED = seed
+        self.simplices_path = os.path.join(self.input_folder, "{}", "{}-simplices.txt")
+        self.nverts_path = os.path.join(self.input_folder, "{}", "{}-nverts.txt")
+
         self.default_save_dir = os.path.join(self.output_folder, "{}", "hedge-{}", "negtype-{}-{}", "seed-{}")
         self.default_save_path = os.path.join(self.default_save_dir, "hypergraph.data")
         self.save = save

@@ -22,7 +22,10 @@ class HedgePredDataset(Dataset):
         n_pos = x_pos.shape[0]
         n_neg = x_neg.shape[0]
 
-        p2n_ratio = n_pos / float(n_neg)
+        if float(n_neg) == 0:
+            p2n_ratio = 0
+        else:
+            p2n_ratio = n_pos / float(n_neg)
         weights_pos = torch.ones(n_pos)
         weights_neg = p2n_ratio * torch.ones(n_neg)
 
