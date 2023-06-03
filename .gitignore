@@ -8,3 +8,6 @@ HG_NEW
 NEWResults
 raw_data
 proc_data
+/Results
+Results/*/*/*/*.png
+Results/*/*/*/*.csv
